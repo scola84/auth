@@ -1,6 +1,6 @@
 {
   "name": "@scola/auth",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Auth",
   "repository": "github:scola84/auth",
   "author": "M.C. van den Boogaart <scola@kvdb.name>",
