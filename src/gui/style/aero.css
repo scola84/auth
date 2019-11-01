@@ -1,0 +1,25 @@
+.aero .panel.auth>.body {
+  background: none;
+}
+
+.aero .panel.auth:not(.outset-x) .group {
+  background: whitesmoke;
+  padding: 0.5em;
+}
+
+.aero .panel.auth .group>.body {
+  border: 0;
+}
+
+.aero .panel.auth .message {
+  background: none;
+  color: white;
+  margin: 0.25em 0;
+  text-shadow: 0 0 2px black;
+}
+
+.aero .panel.auth .route {
+  color: white;
+  padding: 0.5em 0.5em 0;
+  text-shadow: 0 0 2px black;
+}

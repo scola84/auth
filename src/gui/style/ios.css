@@ -1,0 +1,14 @@
+.ios .panel.auth .identity {
+  margin: 0 1em;
+}
+
+.ios .panel.auth .message {
+  background: none;
+  margin: 0 1em;
+}
+
+.ios .panel.auth .route {
+  color: dimgrey;
+  margin: 0 1em;
+  padding: 0.5em;
+}

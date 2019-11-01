@@ -1,0 +1,45 @@
+{
+  "author": "M.C. van den Boogaart <scola@kvdb.name>",
+  "description": "Scola Auth",
+  "license": "MIT",
+  "main": "./dist/auth.cjs.js",
+  "module": "./index.js",
+  "name": "@scola/auth",
+  "repository": "github:scola84/auth",
+  "version": "0.0.0",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build:dev": "yarn run clean && rimraf node_modules/@scola && rollup -cmw",
+    "build:prod": "yarn run clean && rollup -c",
+    "clean": "rimraf node_modules/ yarn.lock && yarn install",
+    "format": "glob-run js-beautify -r 'src/**/*.{css,js}' && npx standard --fix && npx eslint src",
+    "git:pkg": "git add CHANGELOG.md LICENSE.md yarn.lock package.json",
+    "git:src": "git add src/",
+    "preversion": "yarn run format && yarn run git:src",
+    "version": "yarn run build:prod && yarn run git:pkg"
+  },
+  "devDependencies": {
+    "eslint": ">=6.5.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": ">=2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": ">=10.0.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "eslint-plugin-standard": ">=4.0.1",
+    "glob-run": "^0.1.7",
+    "js-beautify": "^1.10.2",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.23.1",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "@scola/lib": "0.0.0",
+    "argon2": "^0.25.0",
+    "fingerprintjs2": "^2.1.0"
+  }
+}

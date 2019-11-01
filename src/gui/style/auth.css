@@ -1,0 +1,40 @@
+.modal>.dialog .auth input[name="email"] {
+  background: none;
+  border: 0;
+  font-size: inherit;
+  margin: 0;
+  pointer-events: none;
+}
+
+.panel.auth .identity {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50%;
+}
+
+.panel.auth form {
+  flex: 1;
+}
+
+.panel.auth label.item {
+  cursor: pointer;
+}
+
+.panel.auth .route {
+  justify-content: center;
+  display: flex;
+}
+
+.panel.auth .route>* {
+  font-size: 0.9em;
+}
+
+.panel.auth .route .separator {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.panel.auth .route .separator:after {
+  content: '•';
+}
